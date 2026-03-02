@@ -231,7 +231,7 @@ Despite moderate Dice and IoU values, the model provides:
 If you use this tool, please cite:
 
 ```
-Gutiérrez Benites, E. D. (2026).
+Gutiérrez Benites, E. D., da Silva, A. L. B. R., Sanz-Saez, Á., Adhikari, S., & Knappenberger, T. (2026).
 RhizoAnnotator: Automated root segmentation from minirhizotron images using deep learning.
 GitHub repository. https://github.com/egubens/RhizoAnnotator
 ```
