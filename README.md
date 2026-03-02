@@ -114,7 +114,7 @@ Direct download (optional):
 ## ⚙️ Key Parameters
 
 ```python
-IMG_SIZE = (1024, 1024)
+IMG_SIZE = (1024, 1152)
 BATCH_SIZE = 4
 THRESHOLD = 0.5
 NUM_PREVIEW = 10
