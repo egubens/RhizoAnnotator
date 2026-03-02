@@ -2,7 +2,9 @@
 
 **Automated root segmentation from minirhizotron images using deep learning, enabling scalable and reproducible root analysis.**
 
-🔗 Repository: https://github.com/egubens/RhizoAnnotator
+🔗 Open notebook in Colab [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egubens/RhizoAnnotator/blob/main/inference_colab.ipynb)
+
+🔗 Repository: [RhizoAnnotator](https://github.com/egubens/RhizoAnnotator)
 
 ---
 
@@ -34,8 +36,7 @@ This tool is **primarily designed to run in Google Colab with GPU acceleration**
 ## 🚀 Quick Start (Google Colab)
 
 ### 1. Open the notebook in Google Colab
-Upload or open:
-`inference_colab.ipynb`
+[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egubens/RhizoAnnotator/blob/main/inference_colab.ipynb)
 
 ### 2. Enable GPU
 Runtime → Change runtime type → T4 GPU
@@ -89,9 +90,15 @@ WEIGHTS_PATH = "rhizoannotator_v1.pt"
 
 ## 📥 Model Weights
 
-Weights are automatically downloaded when running the notebook.
+Model weights are hosted in the GitHub Releases and are **automatically downloaded by the notebook at runtime**.
 
-[rhizoannotator_v1.pt](https://github.com/egubens/RhizoAnnotator/releases/download/V1.0.0/rhizoannotator_v1.pt)
+This ensures:
+- No manual setup
+- Consistent versioning
+- Reproducible inference
+
+Direct download (optional):  
+[Download model weights (v1.0.0)](https://github.com/egubens/RhizoAnnotator/releases/download/V1.0.0/rhizoannotator_v1.pt)
 
 ---
 
@@ -123,7 +130,49 @@ NUM_PREVIEW = 10
   - 255 → background  
 
 ---
+## 📊 Model Performance
 
+The model was trained and validated using the PRMI (Public Root Minirhizotron Image) dataset, consisting of over 15,000 annotated images.
+
+### Dataset
+- Training images: 11,284  
+- Validation images: 3,947  
+- Image size: 256 × 256 (resized during training)
+
+### Evaluation Metrics
+Performance was evaluated using:
+- Dice coefficient  
+- Intersection over Union (IoU)  
+- Accuracy  
+
+### Results (Validation Set)
+- Accuracy: **98.2%**  
+- Dice coefficient: **0.22**  
+- IoU: **0.34**
+
+### Interpretation
+
+- The model achieves **high overall accuracy**, primarily due to the strong imbalance between background and root pixels in minirhizotron images.  
+- It performs reliably in identifying **dominant root structures** and separating them from complex soil backgrounds, including visually similar materials such as biochar.  
+- Performance is more limited for **fine root structures**, which are inherently difficult to capture due to their small size and low contrast.  
+
+### Practical Performance
+
+Despite moderate Dice and IoU values, the model provides:
+- Consistent detection of root presence across images  
+- Robust separation of roots from noisy backgrounds  
+- A scalable alternative to manual annotation and traditional threshold-based methods  
+
+---
+
+## ⚠️ Limitations
+
+- Reduced sensitivity to very fine roots  
+- Performance may vary with:
+  - Soil type  
+  - Imaging conditions  
+- Images are resized prior to inference, which may reduce fine-scale detail
+  
 ## 📊 Example Results
 
 <table align="center">
