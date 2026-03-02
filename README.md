@@ -129,31 +129,31 @@ NUM_PREVIEW = 10
 <table align="center">
   <tr>
     <td align="center">
-      <img src="images/img1.jpg" width="300"/><br>
+      <img src="examples/img1.jpg" width="300"/><br>
       <sub>Image 1</sub>
     </td>
     <td align="center">
-      <img src="images/img1-mask.png" width="300"/><br>
+      <img src="examples/img1-mask.png" width="300"/><br>
       <sub>Mask 1</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="images/img2.jpg" width="300"/><br>
+      <img src="examples/img2.jpg" width="300"/><br>
       <sub>Image 2</sub>
     </td>
     <td align="center">
-      <img src="images/img2-mask.png" width="300"/><br>
+      <img src="examples/img2-mask.png" width="300"/><br>
       <sub>Mask 2</sub>
     </td>
   </tr>
   <tr>
     <td align="center">
-      <img src="images/img3.jpg" width="300"/><br>
+      <img src="examples/img3.jpg" width="300"/><br>
       <sub>Image 3</sub>
     </td>
     <td align="center">
-      <img src="images/img3-mask.png" width="300"/><br>
+      <img src="examples/img3-mask.png" width="300"/><br>
       <sub>Mask 3</sub>
     </td>
   </tr>
