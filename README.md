@@ -2,8 +2,6 @@
 
 **Automated root segmentation from minirhizotron images using deep learning, enabling scalable and reproducible root analysis.**
 
-🔗 Open notebook in Colab [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egubens/RhizoAnnotator/blob/main/inference_colab.ipynb)
-
 🔗 Repository: [RhizoAnnotator](https://github.com/egubens/RhizoAnnotator)
 
 ---
@@ -36,10 +34,13 @@ This tool is **primarily designed to run in Google Colab with GPU acceleration**
 ## 🚀 Quick Start (Google Colab)
 
 ### 1. Open the notebook in Google Colab
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egubens/RhizoAnnotator/blob/main/inference_colab.ipynb)
+Click here: [![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/egubens/RhizoAnnotator/blob/main/inference_colab.ipynb)
 
 ### 2. Enable GPU
-Runtime → Change runtime type → T4 GPU
+In Colab:
+Runtime → Change runtime type → GPU
+
+A GPU is strongly recommended for faster inference, especially when processing large image datasets.
 
 ### 3. Run the notebook
 
