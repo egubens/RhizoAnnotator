@@ -10,6 +10,8 @@
 
 **RhizoAnnotator** is a deep learning–based tool for segmenting roots from minirhizotron images.
 
+⚠️ **This repository is intended for inference/segmentation only. It does NOT include training pipelines.**
+
 It generates **binary masks** where:
 
 - **Roots = black (0)**
@@ -73,7 +75,7 @@ pip install torch torchvision pillow matplotlib tqdm gdown
 1. Set local paths:
 ```python
 IMG_DIR = "/path/to/your/images"
-WEIGHTS_PATH = "best_unet_model.pt"
+WEIGHTS_PATH = "rhizoannotator_v1.pt"
 ```
 
 2. Run the notebook or script.
@@ -89,7 +91,7 @@ WEIGHTS_PATH = "best_unet_model.pt"
 
 Weights are automatically downloaded when running the notebook.
 
-(Add your Google Drive or Zenodo link here)
+[rhizoannotator_v1.pt](https://github.com/egubens/RhizoAnnotator/releases/download/V1.0.0/rhizoannotator_v1.pt)
 
 ---
 
