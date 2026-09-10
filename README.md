@@ -252,6 +252,8 @@ MIT License
 
 ---
 
-## 🤝 Contributing
+## 🤝 Acknowledgments
 
-Open an issue for suggestions or bugs.
+Financial support for this work was provided by the United States Department of Agriculture - Agricultural Research Service under a non-assistance cooperative agreement (58-6010-2-005).
+
+---
